@@ -16,7 +16,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/luci-app-qos-emong
   SECTION:=luci
   CATEGORY:=LuCI
-  DEPENDS:= +tc +iptables-mod-conntrack +iptables-mod-conntrack-extra +iptables-mod-filter +iptables-mod-ipopt +iptables-mod-nat +kmod-sched +iptables-mod-iprange
+  DEPENDS:= +tc +iptables-mod-conntrack-extra +iptables-mod-filter +iptables-mod-ipopt +iptables-mod-nat-extra +kmod-sched +iptables-mod-iprange
   TITLE:=LuCI - Lua Configuration Interface
   URL:=http://
   MAINTAINER:=Jeroen Louwes <jeroen.louwes@gmail.com>
