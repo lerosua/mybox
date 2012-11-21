@@ -1,0 +1,13 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+          delete ucitrack.@qos-emong[-1]
+          add ucitrack qos-emong
+          set ucitrack.@qos-emong[-1].init=qos-emong
+          commit ucitrack
+EOF
+chmod 755 /etc/init.d/qos-emong
+chmod 755 /etc/hotplug.d/iface/60-qos-emong
+/etc/init.d/qos-emong enable
+rm -f /tmp/luci-indexcache
+exit 0
