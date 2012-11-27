@@ -1,6 +1,8 @@
 module("luci.controller.nwan", package.seeall)
 
 function index()
+	require("luci.i18n")
+	luci.i18n.loadc("nwan")
 
 	if nixio.fs.access("/etc/config/nwan") then
 
