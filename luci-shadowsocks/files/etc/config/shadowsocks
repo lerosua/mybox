@@ -1,0 +1,8 @@
+config 'server'
+	option 'server' ''
+	option 'server_port' '10086'
+	option 'local_port'  '8087'
+	option 'password' '321654'
+	option 'timeout' '60'
+	option 'method' 'bf-cfb'
+	option 'enabled' '0'
