@@ -1,11 +1,11 @@
 
 require("luci.tools.webadmin")
 
-m = Map("Shadowsocks", translate("Shadowsocks"),
+m = Map("shadowsocks", translate("Shadowsocks"),
 			translate("Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes."))
 
 
-s = m:section(TypedSection, "shadowsocks", translate("Settings"))
+s = m:section(TypedSection, "setting", translate("Settings"))
 s.addremove = true
 s.anonymous = false
 
